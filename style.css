@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 td, th {
   border: solid black 1px;
   padding: 10px;
