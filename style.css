@@ -1,0 +1,8 @@
+td, th {
+  border: solid black 1px;
+  padding: 10px;
+}
+
+thead, tfoot {
+  background: lightgray;
+}
