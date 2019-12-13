@@ -10,3 +10,21 @@ td, th {
 thead, tfoot {
   background: lightgray;
 }
+
+fieldset {
+  margin-top: 20px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button, input {
+  border-radius: 3px;
+}

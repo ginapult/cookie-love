@@ -13,7 +13,36 @@
   </header>
 
   <main>
-    <table id="table-holder"></table>
+
+    <table id="table-holder">
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+      <tfoot id="tfoot"></tfoot>
+    </table>
+
+    <form id="form-holder">
+
+      <fieldset>
+        <legend>Add a Location</legend>
+
+        <label for="city">Location Name</label>
+        <input id="city" type="string">
+
+        <label for="min-custs">Min Customers</label>
+        <input id="min-custs" type="number">
+
+        <label for="max-custs">Max Customers</label>
+        <input id="max-custs" type="number">
+
+        <label for="avg-cookies">Average Cookies Per Hour</label>
+        <input id="avg-cookies" type="number">
+
+        <button>Submit New Location</button>
+
+    </fieldset>
+
+    </form>
+
   </main>
 
   <footer></footer>
