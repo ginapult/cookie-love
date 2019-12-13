@@ -72,18 +72,22 @@ function renderTableFooter() {
   var newTd = document.createElement('td');
   newTd.textContent = 'Totals';
   newTr.appendChild(newTd);
-  tableFoot.appendChild(newTr);
-  
+
+  var grandTotal = 0;
   for (var i = 0; i < hours.length; i++) {
     var hourlyTotal = 0;
     for (var j = 0; j < allCities.length; j++) {
       hourlyTotal = hourlyTotal + allCities[j].avgCookiesPerHour[i];
     }
+    grandTotal = grandTotal + hourlyTotal;
     newTd = document.createElement('td');
     newTd.textContent = hourlyTotal;
     newTr.appendChild(newTd);
-    tableFoot.appendChild(newTr);
   }
+  newTd = document.createElement('td');
+  newTd.textContent = grandTotal;
+  newTr.appendChild(newTd);
+  tableFoot.appendChild(newTr);
 }
 
 // set up event listener on the form
